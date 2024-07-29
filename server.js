@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.post('/log', (req, res) => {
     const logMessage = req.body.logMessage;
-    const logFilePath = path.join(__dirname, 'logs_26_07_2024.txt');
+    const logFilePath = path.join(__dirname, 'logs_29_07_2024.txt');
     const logId = uuidv4();
     const logEntry = `GUID: ${logId}, Message: ${logMessage}`;
 
